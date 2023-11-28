@@ -1,9 +1,272 @@
 {
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
     "settings": {
-        "layout": {
-			"contentSize": "840px",
-			"wideSize": "1100px"
+		"appearanceTools": true,
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"custom": false,
+			"customDuotone": false,
+			"customGradient": false,
+			"palette": [
+				{
+					"slug": "foreground",
+					"color": "#000000",
+					"name": "Foreground"
+				},
+				{
+					"slug": "background",
+					"color": "#FFFFFF",
+					"name": "Background"
+				},
+				{
+					"slug": "primary",
+					"color": "#00607A",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#F9C9EF",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#F7CAB6",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "quaternary",
+					"color": "#FDF5F1",
+					"name": "Quaternary"
+				},
+				{
+					"slug": "quinary",
+					"color": "#ED8CDF",
+					"name": "Quinary"
+				},
+				{
+					"slug": "senary",
+					"color": "#85EACC",
+					"name": "Senary"
+				},
+				{
+					"slug": "septenary",
+					"color": "#DAFE86",
+					"name": "Septenary"
+				},
+				{
+					"slug": "octonary",
+					"color": "#F1A17E",
+					"name": "Octonary"
+				},
+				{
+					"slug": "nonary",
+					"color": "#E3DFDD",
+					"name": "Nonary"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "gradient-1",
+					"gradient": "linear-gradient(180deg, rgba(0,96,122,1) 0%, rgba(249,201,239,1) 100%)",
+					"name": "Gradient 1"
+				},
+				{
+					"slug": "gradient-2",
+					"gradient": "linear-gradient(180deg, rgba(0,96,122,1) 0%, rgba(247,202,182,1) 100%)",
+					"name": "Gradient 2"
+				},
+				{
+					"slug": "gradient-3",
+					"gradient": "linear-gradient(180deg, rgba(0,96,122,1) 0%, rgba(253,245,241,1) 100%)",
+					"name": "Gradient 3"
+				},
+				{
+					"slug": "gradient-4",
+					"gradient": "linear-gradient(180deg, rgba(0,96,122,1) 0%, rgba(237,140,223,1) 100%)",
+					"name": "Gradient 4"
+				},
+				{
+					"slug": "gradient-5",
+					"gradient": "linear-gradient(180deg, rgba(0,96,122,1) 0%, rgba(133,234,204,1) 100%)",
+					"name": "Gradient 5"
+				},
+				{
+					"slug": "gradient-6",
+					"gradient": "linear-gradient(180deg, rgba(0,96,122,1) 0%, rgba(218,254,134,1) 100%)",
+					"name": "Gradient 6"
+				},
+				{
+					"slug": "gradient-7",
+					"gradient": "linear-gradient(180deg, rgba(0,96,122,1) 0%, rgba(241,161,126,1) 100%)",
+					"name": "Gradient 7"
+				}
+			],
+			"link": true
+		},
+		"custom": {
+			"fontWeight": {
+				"thin": 100,
+				"extra-light": 200,
+				"light": 300,
+				"regular": 400,
+				"medium": 500,
+				"semi-bold": 600,
+				"bold": 700,
+				"extra-bold": 800,
+				"black": 900
+			},
+			"lineHeight": {
+				"none": 1,
+				"tight": 1.1,
+				"snug": 1.2,
+				"normal": 1.5,
+				"relaxed": 1.625,
+				"loose": 2,
+				"body": "calc(1px + 2ex + 7px)"
+			}
+		},
+		"layout": {
+			"contentSize": "740px",
+			"wideSize": "1260px"
+		},
+		"spacing": {
+			"spacingSizes": [
+				{
+					"name": "Small",
+					"size": "clamp(.5rem, 2.5vw, 1rem)",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "clamp(1.5rem, 4vw, 2rem)",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "clamp(2rem, 5vw, 3rem)",
+					"slug": "large"
+				},
+				{
+					"name": "Extra Large",
+					"size": "clamp(3rem, 7vw, 5rem)",
+					"slug": "x-large"
+				},
+				{
+					"name": "2xl",
+					"size": "clamp(4rem, 9vw, 7rem)",
+					"slug": "xx-large"
+				},
+				{
+					"name": "3xl",
+					"size": "clamp(5rem, 12vw, 9rem)",
+					"slug": "xxx-large"
+				},
+				{
+					"name": "4xl",
+					"size": "clamp(6rem, 14vw, 13rem)",
+					"slug": "xxxx-large"
+				}
+			],
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw",
+				"%"
+			],
+			"blockGap": true,
+			"padding": true,
+			"margin": true
+		},
+		"typography": {
+			"dropCap": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "System Sans Serif",
+					"slug": "system-sans-serif"
+				},
+				{
+					"fontFamily": "-apple-system-ui-serif, ui-serif, Noto Serif, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol",
+					"name": "System Serif",
+					"slug": "system-serif"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": {
+						"min": ".9rem",
+						"max": "1rem"
+					},
+					"size": "1rem",
+					"slug": "x-small",
+					"name": "Extra Small"
+				},
+				{
+					"fluid": {
+						"min": "1rem",
+						"max": "1.2rem"
+					},
+					"size": "1.2rem",
+					"slug": "small"
+				},
+				{
+					"fluid": {
+						"min": "1.13rem",
+						"max": "1.3rem"
+					},
+					"size": "1.3rem",
+					"slug": "base",
+					"name": "Base"
+				},
+				{
+					"fluid": {
+						"min": "1.3rem",
+						"max": "1.6rem"
+					},
+					"size": "1.6rem",
+					"slug": "medium"
+				},
+				{
+					"fluid": {
+						"min": "1.5rem",
+						"max": "2rem"
+					},
+					"size": "2rem",
+					"slug": "large"
+				},
+				{
+					"fluid": {
+						"min": "2rem",
+						"max": "2.8rem"
+					},
+					"size": "2.8rem",
+					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"min": "2.6rem",
+						"max": "3.75rem"
+					},
+					"size": "3.75rem",
+					"slug": "xx-large",
+					"name": "2xl"
+				},
+				{
+					"fluid": {
+						"min": "3rem",
+						"max": "4.8rem"
+					},
+					"size": "4.8rem",
+					"slug": "xxx-large",
+					"name": "3xl"
+				}
+			],
+			"lineHeight": true
 		}
     }
 }
